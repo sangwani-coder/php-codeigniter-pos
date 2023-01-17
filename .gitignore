@@ -1,75 +1,127 @@
-# CodeIgniter 4 Application Starter
+#-------------------------
+# Operating Specific Junk Files
+#-------------------------
 
-## What is CodeIgniter?
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+# OS X Thumbnails
+._*
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-## Installation & updates
+# Windows shortcuts
+*.lnk
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+# Linux
+*~
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+# KDE directory preferences
+.directory
 
-## Setup
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
 
-Rename `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+#-------------------------
+# Environment Files
+#-------------------------
+# These should never be under version control,
+# as it poses a security risk.
+.env
+.vagrant
+Vagrantfile
 
-## Files I created
+#-------------------------
+# Temporary Files
+#-------------------------
+writable/cache/*
+!writable/cache/index.html
 
-**Controllers**
+writable/logs/*
+!writable/logs/index.html
 
-    News.php
-    Pages.php
+writable/session/*
+!writable/session/index.html
 
-**Models**
+writable/uploads/*
+!writable/uploads/index.html
 
-    NewsModel.php
+writable/debugbar/*
 
-**Views**
+php_errors.log
 
-    * news
+#-------------------------
+# User Guide Temp Files
+#-------------------------
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
 
-        * create.php
-        * success.php
-        * view.php
-    
-    * pages
+#-------------------------
+# Test Files
+#-------------------------
+tests/coverage*
 
-        * about.php
-        * home.php
+# Don't save phpunit under version control.
+phpunit
 
-    * templates
-        * footer.php
-        * header.php
-   
-## modified configuration files
+#-------------------------
+# Composer
+#-------------------------
+vendor/
 
-    Config/Routes.php & Config/Filters.php
+#-------------------------
+# IDE / Development Files
+#-------------------------
 
-    
-## Server Requirements
+# Modules Testing
+_modules/*
 
-I used PHP version 8.0.25, with the following extensions installed:
+# phpenv local config
+.php-version
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+# Jetbrains editors (PHPStorm, etc)
+.idea/
+*.iml
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+# Netbeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.phpintel
+/api/
+
+# Visual Studio Code
+.vscode/
+
+/results/
+/phpunit*.xml
+/.phpunit.*.cache
+

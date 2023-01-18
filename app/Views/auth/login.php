@@ -23,7 +23,7 @@
                     <div class="mb-3">
                         <label for="email" class="control-label">Email</label>
                         <div class="input-group rounded-0">
-                            <input type="email" class="form-control rounded-0" id="email" name="email" autofocus placeholder="jsmith@mail.com" value="<?= !empty($data->getPost('email')) ? $data->getPost('email') : '' ?>" required="required">
+                            <input type="email" class="form-control rounded-0" id="email" name="email" autofocus placeholder="psepiso@email.com" value="<?= !empty($data->getPost('email')) ? $data->getPost('email') : '' ?>" required="required">
                             <div class="input-group-text bg-light bg-gradient rounded-0"><i class="fa fa-user"></i></div>
                         </div>
                     </div>

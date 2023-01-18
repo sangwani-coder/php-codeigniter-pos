@@ -28,14 +28,14 @@
                 <div class="mb-3">
                     <label for="email" class="control-label">Name</label>
                     <div class="input-group rounded-0">
-                        <input type="text" class="form-control rounded-0" id="name" name="name" autofocus placeholder="John Smith" value="<?= !empty($request->getPost('name')) ? $request->getPost('name') : '' ?>" required="required">
+                        <input type="text" class="form-control rounded-0" id="name" name="name" autofocus placeholder="Pumulo Sepiso" value="<?= !empty($request->getPost('name')) ? $request->getPost('name') : '' ?>" required="required">
                         <div class="input-group-text bg-light bg-gradient rounded-0"><i class="fa fa-user"></i></div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="control-label">Email</label>
                     <div class="input-group rounded-0">
-                        <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="jsmith@mail.com" value="<?= !empty($request->getPost('email')) ? $request->getPost('email') : '' ?>" required="required">
+                        <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="psepiso@email.com" value="<?= !empty($request->getPost('email')) ? $request->getPost('email') : '' ?>" required="required">
                         <div class="input-group-text bg-light bg-gradient rounded-0"><i class="fa fa-at"></i></div>
                     </div>
                 </div>

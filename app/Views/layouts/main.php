@@ -37,10 +37,10 @@
     <?= $this->renderSection('custom_css') ?>
 
 </head>
-<body class="bg-dark bg-gradient bg-opacity-25">
+<body class="bg-info bg-gradient bg-opacity-55">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient">
     <div class="container">
-        <a class="navbar-brand" href="https://sourcecodester.com"><?= env('short_name') ?></a>
+        <a class="navbar-brand" href="https://zyambo.pythonanywhere.com"><?= env('short_name') ?></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -76,6 +76,16 @@
                 </div>
             <?php endif; ?>
         <?= $this->renderSection('content') ?>
+    </div>
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">Developer <a href="https://zyambo.pythonanywhere.com"><?= env('developer') ?></a></span>
+        </div>
+    </footer>
     </div>
 </body>
 <?= $this->renderSection('custom_js') ?>
